@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="CSS/StyleR3.css">
+    <title>Trainee FrontEnd R3</title>
+</head>
+<body>
+    <div class="contenedorTotal"> 
+        <div class="contenedorImg">
+            <img class="gaspar" src="Recursos/Gaspar.jpg" alt="No se pudo cargar la imagen">
+            <img class="iconoPlay" src="Recursos/Play.png" alt="#" onclick="reproducirVideo()"> 
+        </div>
+        <div class="contendorTitulos">
+            <h1>
+                Gaspar Benegas: “El Indio me dijo que es mi padre putativo”
+            </h1>
+            <h3>
+                El guitarrista del Indio Solari pasó por Hagan Correr La Voz en un tremendo mano a mano con el Gallo Bluguermann.
+            </h3>
+        </div>
+    </div>
+    <div class="contenedorVideo" id="contenedorVideo">
+        <video class= "videoAfec" src="Recursos/AlFinalEraCierto.mp4" id="video" controls></video> 
+        <button class="btnCerrar" onclick="cerrarVideo()">X</button>
+    </div>
+    <script src="JS/R3.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Margenes para darle prolijidad a los contenidos*/
+.contenedorImg, .contendorTitulos, .contenedorVideo {
+    margin: 5px 5px 5px 5px;
+}
+
+.contenedorImg {
+    display: flex;
+    justify-content: center;
+}
+
+.gaspar {
+    width: 310px;
+    height: 210px;
+}
+
+/*Desde acá le damos la ubicación y el tamaño al ícono para activar el video.*/
+.iconoPlay {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 80px;
+    cursor: pointer;
+ }
+
+ /*Display y posicionamiento del video.*/
+ .contenedorVideo{
+    display: none;
+    position: flex;
+    justify-content: center;
+ }
+ 
+.videoAfec {             
+    width: 310px;
+}
+
+/*Desde acá le damos la ubicación y el tamaño al ícono para cerrar el video.*/
+
+.btnCerrar{
+    display: flex;
+    position: relative;
+    right: 15px;
+    height: 18px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h3 {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+/*Valores para mantener responsividad del contenido*/
+@media (min-width: 768px) {
+    
+    .contenedorTotal {
+        display: flex;
+        align-items: center;
+    }
+
+    .contendorTitulos {
+        max-width: 500px;
+    }
+
+    img {
+        width: 400px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .videoAfec {             
+        width: 500px;
+    }
+}
